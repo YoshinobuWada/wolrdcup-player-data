@@ -1,0 +1,12 @@
+#Player {
+    width: 100%;
+    border: 3px solid black;
+}
+
+table th {
+    background-color: #fff;
+}
+
+table tr:nth-child(odd) th {
+    background-color: #eee;
+}

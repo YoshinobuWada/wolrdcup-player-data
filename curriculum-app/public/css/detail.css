@@ -1,0 +1,23 @@
+#detail{
+    width: 60%;
+    border: 3px solid black;
+}
+
+table tr {
+    background-color: #fff;
+}
+
+table tr:nth-child(odd) {
+    background-color: #eee;
+}
+table th{
+    width: 50%;
+    padding: 5px 0;
+}
+
+table td {
+    width: 50%;
+    padding: 5px 0;
+    text-align: center;
+    font-weight: bold;
+}
