@@ -43,5 +43,5 @@ if(!strstr($referer, $url)){
         <th>体重</th>
         <td>{{ $players->weight }}</td>
     </tr>
-</table>
+</table> 
 <a href="/" class="btn btn-primary">戻る</a>
