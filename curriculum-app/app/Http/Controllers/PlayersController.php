@@ -47,8 +47,8 @@ class PlayersController extends Controller
     }
 
     public function edit(EditFormRequest $request, $id){
-        $player = Player::find($id);
-        $player->update([
+        $players = Player::find($id);
+        $players->update([
             'uniform_num' => $request->uniform_num,
             'position' => $request->position,
             'name' => $request->name,
