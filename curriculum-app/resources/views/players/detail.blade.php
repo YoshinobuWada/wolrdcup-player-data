@@ -10,6 +10,7 @@ if(!strstr($referer, $url)){
 <head>
 <link rel="stylesheet" href="/css/detail.css">
 </head>
+<div class="wrap">
 <table id="detail">
     <tr>
         <th>No</th>
@@ -28,6 +29,10 @@ if(!strstr($referer, $url)){
         <td>{{ $players->name }}</td>
     </tr>
     <tr>
+        <th>国</th>
+        <td >{{ $players->country->name }}</td>
+    </tr>
+    <tr>
         <th>所属</th>
         <td>{{ $players->club }}</td>
     </tr>
@@ -43,5 +48,22 @@ if(!strstr($referer, $url)){
         <th>体重</th>
         <td>{{ $players->weight }}</td>
     </tr>
+    <tr>
+        <th>総得点</th>
+        @if($goals != 0)
+        <td>{{ $goals }}点</td>
+        @else
+        <td>無得点です。</td>
+        @endif
+    </tr>
+    <tr>
+        <th>得点履歴</th>
+        <td>
+            @foreach($pairings as $index => $pairing)
+            ・{{ $pairing->kickoff }}開始 {{ $pairing->name }}戦 {{ $pairing->goal_time }}: {{ $index + 1 }}点目<br>
+            @endforeach
+        </td>
+    </tr>
 </table> 
-<a href="/" class="btn btn-primary">戻る</a>
+<button class="back" onclick="location.href='/'">戻る</button>
+</div>
