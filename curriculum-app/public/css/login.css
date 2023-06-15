@@ -1,0 +1,37 @@
+.wrap {
+    width: 45%;
+    margin: 0 auto;
+}
+
+.info dt {
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.info dd {
+    margin-left:0;
+}
+
+.info dd input{
+    width: 100%;
+    padding: 3px 0 3px 3px;
+}
+
+.login {
+    width: 100%;
+    border: none;
+    font-size: 24px;
+    background-color: yellow;
+    box-shadow: 1px 1px 3px black;
+    cursor: pointer;
+}
+
+.link {
+    text-align: center;
+}
+
+.error {
+    margin: 1px 0 2px 10px;
+    color: red;
+    text-align: left;
+}

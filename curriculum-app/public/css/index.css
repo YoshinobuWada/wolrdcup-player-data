@@ -30,3 +30,9 @@ table tr:nth-child(odd) th {
 #sakuzyo{
     background-color: red;
 }
+
+.logout{
+    display: block;
+    margin-bottom: 3px;
+    margin-left: auto;
+}
